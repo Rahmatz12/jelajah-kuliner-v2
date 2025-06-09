@@ -1,8 +1,7 @@
-@extends('layouts.layout')
-
+@extends('layouts.layout2')
 
 @section('title')
-ABOUT US?
+User Guide
 @endsection
 
 @section('css')
@@ -10,31 +9,32 @@ ABOUT US?
 @endsection
 
 @section('main')
-<div class="content" style="margin: 1.5%;">
-    <div style="display: flex; justify-content: space-between;">
-        {{-- admin --}}
-        <div style="width: 48%; display: flex; flex-direction: column; align-items: center;">
-            <h1>User Guide Admin</h1>
-            <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe"
-                src="https://heyzine.com/flip-book/d2f8e85f02.html"
-                style="border: 1px solid lightgray; width: 100%; height: 550px;"></iframe>
-        </div>
+<div class="content" style="margin: 0; padding: 0;">
 
-        <div style="width: 48%; display: flex; flex-direction: column; align-items: center;">
-            <h1>User Guide Visitor</h1>
-            <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe"
+    {{-- Header User Guide --}}
+    <div style="background-color: #8B0000; padding: 40px 0; text-align: center;">
+        <h1 style="color: white; font-size: 48px; font-weight: bold; margin: 0;">USER GUIDE</h1>
+    </div>
+
+    {{-- User Guide PKL --}}
+    <div style="padding: 40px 5% 0 5%; text-align: center;">
+        <h2 style="color: #8B0000; font-weight: bold; font-size: 28px;">USERGUIDE PKL</h2>
+        <div style="margin-top: 20px;">
+            <iframe allowfullscreen scrolling="no" class="fp-iframe"
+                src="https://heyzine.com/flip-book/71c9ca6e8a.html"
+                style="border: 1px solid lightgray; width: 100%; height: 500px;"></iframe>
+        </div>
+    </div>
+
+    {{-- User Guide Pembeli --}}
+    <div style="padding: 40px 5% 60px 5%; text-align: center;">
+        <h2 style="color: #8B0000; font-weight: bold; font-size: 28px;">USERGUIDE PEMBELI</h2>
+        <div style="margin-top: 20px;">
+            <iframe allowfullscreen scrolling="no" class="fp-iframe"
                 src="https://heyzine.com/flip-book/00bf2a3947.html"
-                style="border: 1px solid lightgray; width: 100%; height: 550px;"></iframe>
+                style="border: 1px solid lightgray; width: 100%; height: 500px;"></iframe>
         </div>
     </div>
 
-    <div style="display: flex; justify-content: space-between; margin-top: 3%; margin-bottom: 3%">
-        {{-- PKL --}}
-        <div style="width: 48%; display: flex; flex-direction: column; align-items: center;">
-            <h1>User Guide PKL</h1>
-            <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/71c9ca6e8a.html" style="border: 1px solid lightgray; width: 100%; height: 400px;"></iframe>
-        </div>
-    </div>
 </div>
-
 @endsection
